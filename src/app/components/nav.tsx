@@ -22,6 +22,14 @@ export default function Nav() {
             About
           </Link>
         </li>
+        <li>
+          <Link
+            className={`link ${pathname === "/projects" ? "active" : ""}`}
+            href="/projects"
+          >
+            Projects
+          </Link>
+        </li>
       </ul>
     </nav>
   );
