@@ -10,28 +10,25 @@ export default function Nav() {
   return (
     <nav className={styles.center}>
       <ul className={styles.navbar}>
-        <li className={styles.card}>
-          <Link
-            className={`link ${pathname === "/about" ? "active" : ""}`}
-            href="/about"
-          >
-            <h2>About</h2>
+        <li>
+          <Link className={styles.card} href="/about">
+            <h2>
+              About <span>-&gt;</span>
+            </h2>
           </Link>
         </li>
-        <li className={styles.card}>
-          <Link
-            className={`link ${pathname === "/projects" ? "active" : ""}`}
-            href="/projects"
-          >
-            <h2>Projects</h2>
+        <li>
+          <Link className={styles.card} href="/projects">
+            <h2>
+              Projects <span>-&gt;</span>
+            </h2>
           </Link>
         </li>
-        <li className={styles.card}>
-          <Link
-            className={`link ${pathname === "/contact" ? "active" : ""}`}
-            href="/"
-          >
-            <h2>Contact</h2>
+        <li>
+          <Link className={styles.card} href="/contact">
+            <h2>
+              Contact <span>-&gt;</span>
+            </h2>
           </Link>
         </li>
       </ul>
