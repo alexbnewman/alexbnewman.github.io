@@ -2,32 +2,36 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import styles from "./nav.module.css";
 
 export default function Nav() {
   const pathname = usePathname();
 
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link className={`link ${pathname === "/" ? "active" : ""}`} href="/">
-            Home
-          </Link>
-        </li>
-        <li>
+    <nav className={styles.center}>
+      <ul className={styles.navbar}>
+        <li className={styles.card}>
           <Link
             className={`link ${pathname === "/about" ? "active" : ""}`}
             href="/about"
           >
-            About
+            <h2>About</h2>
           </Link>
         </li>
-        <li>
+        <li className={styles.card}>
           <Link
             className={`link ${pathname === "/projects" ? "active" : ""}`}
             href="/projects"
           >
-            Projects
+            <h2>Projects</h2>
+          </Link>
+        </li>
+        <li className={styles.card}>
+          <Link
+            className={`link ${pathname === "/contact" ? "active" : ""}`}
+            href="/"
+          >
+            <h2>Contact</h2>
           </Link>
         </li>
       </ul>
