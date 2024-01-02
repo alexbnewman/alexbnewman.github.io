@@ -2,6 +2,8 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
+import NavLink from "./navLink";
 import styles from "./nav.module.css";
 
 export default function Nav() {
@@ -10,27 +12,9 @@ export default function Nav() {
   return (
     <nav className={styles.center}>
       <ul className={styles.navbar}>
-        <li>
-          <Link className={styles.card} href="/about">
-            <h2>
-              About <span>-&gt;</span>
-            </h2>
-          </Link>
-        </li>
-        <li>
-          <Link className={styles.card} href="/projects">
-            <h2>
-              Projects <span>-&gt;</span>
-            </h2>
-          </Link>
-        </li>
-        <li>
-          <Link className={styles.card} href="/contact">
-            <h2>
-              Contact <span>-&gt;</span>
-            </h2>
-          </Link>
-        </li>
+        <NavLink href="/about" text="About" />
+        <NavLink href="/projects" text="Projects" />
+        <NavLink href="/contact" text="Contact" />
       </ul>
     </nav>
   );
