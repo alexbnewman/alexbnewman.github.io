@@ -23,6 +23,18 @@
     background: rgba(var(--card-rgb), 0);
     border: 1px solid rgba(var(--card-border-rgb), 0);
     transition: background 200ms, border 200ms;
+    position: relative;
+}
+
+.cloud {
+    position: absolute;
+    z-index: 1;
+    top: -165px;
+}
+
+.card span, .card h2 {
+    z-index: 2;
+    position: relative;
 }
 
 .card span {
@@ -33,6 +45,7 @@
 .card h2 {
     font-weight: 600;
     margin-bottom: 0.7rem;
+    top: 80px;
 }
 
 /* Enable hover only on non-touch devices */
