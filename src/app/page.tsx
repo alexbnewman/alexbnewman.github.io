@@ -6,9 +6,7 @@ import Script from "next/script";
 export default function Home() {
   return (
     <>
-      <div className={styles.snow}>
         <main className={styles.main}>
-          <script src="snowfall.ts"></script>
           <div>
             <h1>Alex Newman</h1>
           </div>
@@ -20,7 +18,6 @@ export default function Home() {
           </div>
           <Nav />
         </main>
-      </div>
     </>
   );
 }
