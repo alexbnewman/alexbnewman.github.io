@@ -6,7 +6,7 @@ import Image from "next/image";
 import NavLink from "./navLink";
 import styles from "./nav.module.css";
 
-export default function Nav() {
+export default function HomeNav() {
   const pathname = usePathname();
 
   return (
