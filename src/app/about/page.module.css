@@ -6,3 +6,30 @@
     padding: 6rem;
     min-height: 100vh;
 }
+
+.container {
+    border: 2px solid #96c0e8f4;
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+    width: 65%;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 350px;
+    padding: 10 0px;
+}
+
+.container p {
+    font-size: 1.8rem;
+    padding: 15px;
+    margin: 40 20 0 20px;
+}
+
+.verticalLine {
+    border-left: 3px solid #96c0e8f4;
+    height: 100%;
+}
+
+.img {
+    margin: 10px;
+}
