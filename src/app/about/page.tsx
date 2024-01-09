@@ -41,10 +41,10 @@ export default function About() {
       </div>
       <div className={styles.container}>
         <Image
-          src="/void_logo.jpg"
+          src="/croppedSnow.jpg"
           className={styles.img}
-          width={325}
-          height={325}
+          width={350}
+          height={350}
           alt="U-M logo."
         />
         <div className={styles.verticalLine}></div>
