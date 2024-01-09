@@ -7,6 +7,16 @@ export default function About() {
       <div>
         <h1>About Me</h1>
       </div>
+      <div>
+        <h2>Hi, I'm Alex.</h2>
+        <Image
+          src="/Alex_Newman.jpg"
+          className={styles.img}
+          width={480}
+          height={640}
+          alt="Portrait of Alex."
+        />
+      </div>
       <div className={styles.container}>
         <Image
           src="/um_logo.png"
@@ -41,11 +51,11 @@ export default function About() {
       </div>
       <div className={styles.container}>
         <Image
-          src="/croppedSnow.jpg"
+          src="/snowboarding.jpg"
           className={styles.img}
           width={350}
           height={350}
-          alt="U-M logo."
+          alt="Snowboarding."
         />
         <div className={styles.verticalLine}></div>
         <p>
