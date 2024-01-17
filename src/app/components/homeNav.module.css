@@ -1,0 +1,64 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1rem 4rem 0 4rem;  /* top right bottom left */
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(33%, auto));
+    max-width: 100%;
+    width: var(--max-width);
+    /* Get rid of automatic list bullet points. */
+    list-style: none;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1.2rem;
+    border-radius: var(--border-radius);
+    background: rgba(var(--card-rgb), 0);
+    border: 1px solid rgba(var(--card-border-rgb), 0);
+    transition: background 200ms, border 200ms;
+    position: relative;
+    height: 275px;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.cloud {
+    position: absolute;
+    z-index: 1;
+    top: -20%;
+}
+
+.card span, .card h2 {
+    z-index: 2;
+    position: relative;
+}
+
+.card span {
+    display: inline-block;
+    transition: transform 200ms;
+}
+
+.card h2 {
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+    top: 87%;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+    .card:hover {
+        background: rgba(var(--card-rgb), 0.1);
+        border: 1px solid rgba(var(--card-border-rgb), 0.15);
+    }
+
+    .card:hover span {
+        transform: translateX(4px);
+    }
+}

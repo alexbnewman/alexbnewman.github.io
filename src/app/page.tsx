@@ -1,7 +1,5 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import HomeNav from "./components/homeNav";
-import Script from "next/script";
 
 export default function Home() {
   return (
