@@ -5,10 +5,20 @@ import Nav from "../components/nav";
 export default function About() {
   return (
     <>
-    <Nav/>
+      <Nav />
       <main className={styles.main}>
         <div>
           <h1>About Me</h1>
+        </div>
+        <div className={styles.firstRow}>
+          <h2 className={styles.intro}>Hi, I'm Alex.</h2>
+          <Image
+            src="/Alex_Newman_cropped.jpg"
+            className={styles.profPic}
+            width={365}
+            height={426}
+            alt="Portrait of Alex."
+          />
         </div>
         <div className={styles.container}>
           <Image
@@ -44,11 +54,11 @@ export default function About() {
         </div>
         <div className={styles.container}>
           <Image
-            src="/croppedSnow.jpg"
+            src="/snowboarding.jpg"
             className={styles.img}
             width={350}
             height={350}
-            alt="U-M logo."
+            alt="Snowboarding."
           />
           <div className={styles.verticalLine}></div>
           <p>
