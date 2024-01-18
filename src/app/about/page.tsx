@@ -7,13 +7,13 @@ export default function About() {
       <div>
         <h1>About Me</h1>
       </div>
-      <div>
-        <h2>Hi, I'm Alex.</h2>
+      <div className={styles.firstRow}>
+        <h2 className={styles.intro}>Hi, I'm Alex.</h2>
         <Image
-          src="/Alex_Newman.jpg"
-          className={styles.img}
-          width={480}
-          height={640}
+          src="/Alex_Newman_cropped.jpg"
+          className={styles.profPic}
+          width={365}
+          height={426}
           alt="Portrait of Alex."
         />
       </div>
