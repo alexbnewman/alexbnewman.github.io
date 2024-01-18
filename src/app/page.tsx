@@ -3,7 +3,6 @@ import HomeNav from "./components/homeNav";
 
 export default function Home() {
   return (
-    <>
       <main className={styles.main}>
         <div>
           <h1>Alex Newman</h1>
@@ -16,6 +15,5 @@ export default function Home() {
         </div>
         <HomeNav />
       </main>
-    </>
   );
 }
