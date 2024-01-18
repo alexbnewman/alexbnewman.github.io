@@ -1,9 +1,14 @@
+import Nav from "../components/nav";
+
 export default function Projects() {
   return (
-    <main>
-      <div>
-        <h1>Projects</h1>
-      </div>
-    </main>
+    <>
+      <Nav />
+      <main>
+        <div>
+          <h1>Projects</h1>
+        </div>
+      </main>
+    </>
   );
 }
