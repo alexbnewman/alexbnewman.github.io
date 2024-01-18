@@ -4,20 +4,21 @@ import Link from "next/link";
 import styles from "./nav.module.css";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
 
 export default function Nav() {
   const pathname = usePathname();
   const [colorChange, setColorchange] = useState(false);
-  const changeNavbarColor = () => {
-    if (window.scrollY >= 30) {
-      setColorchange(true);
-        } else {
-            setColorchange(false);
-        }
-  };
-  window.addEventListener("scroll", changeNavbarColor);
+  useEffect(() => {
+    const changeNavbarColor = () => {
+      if (window.scrollY >= 30) {
+        setColorchange(true);
+      } else {
+        setColorchange(false);
+      }
+    };
+    window.addEventListener("scroll", changeNavbarColor);
+  }, []);
   return (
     <ul className={`${styles.navbar} ${colorChange ? styles.scrolled : ""}`}>
       <li className={styles.linkContainer}>
