@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 6rem 6rem 3rem 6rem;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -15,6 +15,7 @@
 .main p {
   font-size: 1.15rem;
   margin-top: 5.5rem;
+  padding-bottom: 4rem;
 }
 
 .center {
@@ -22,7 +23,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
 }
 
 /* Mobile */
