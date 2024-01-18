@@ -1,12 +1,7 @@
-"use client";
-
-import { usePathname } from "next/navigation";
 import NavLink from "./navLink";
-import styles from "./nav.module.css";
+import styles from "./homeNav.module.css";
 
 export default function HomeNav() {
-  const pathname = usePathname();
-
   return (
     <nav className={styles.center}>
       <ul className={styles.navbar}>
