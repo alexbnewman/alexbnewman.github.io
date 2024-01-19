@@ -7,11 +7,15 @@ export default function About() {
     <>
       <Nav />
       <main className={styles.main}>
-        <div>
-          <h1>About Me</h1>
-        </div>
         <div className={styles.firstRow}>
-          <h2 className={styles.intro}>Hi, I'm Alex.</h2>
+          <div>
+            <h1>About</h1>
+            <h2>Hi, I'm Alex.</h2>
+            <h2>
+              I'm studying computer science and sociology at the University of
+              Michigan.
+            </h2>
+          </div>
           <Image
             src="/Alex_Newman_cropped.jpg"
             className={styles.profPic}
@@ -32,8 +36,9 @@ export default function About() {
           <p>
             I am a student at the University of Michigan (graduating in May of
             2025), double majoring in computer science and sociology. I am
-            particularly interested in full-stack development, and most recently
-            was employed as a web developer for U-M's College of Engineering.
+            particularly interested in full-stack development, and was most
+            recently employed as a web developer for U-M's College of
+            Engineering.
           </p>
         </div>
         <div className={styles.container}>

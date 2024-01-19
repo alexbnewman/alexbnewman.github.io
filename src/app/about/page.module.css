@@ -15,8 +15,15 @@
     width: var(--max-width);
 }
 
-.intro {
+.firstRow h1 {
+    font-size: 3rem;
+    border-bottom: solid 5px white;
+}
+
+.firstRow h2 {
+    padding-top: 2vh;
     font-size: 2rem;
+    padding-right: 2vh;
 }
 
 .profPic {
