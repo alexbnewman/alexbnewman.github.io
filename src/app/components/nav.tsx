@@ -60,8 +60,8 @@ export default function Nav() {
         <Image
           src="/icon.png"
           className={styles.img}
-          width={25}
-          height={25}
+          width={22}
+          height={22}
           alt="Website logo."
         />
       </li>

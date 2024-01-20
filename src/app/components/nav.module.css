@@ -8,6 +8,7 @@
     overflow: hidden;
     border-bottom: solid 4px white;
     transition: background-color .15s ease;
+    z-index: 2;
 }
 
 .scrolled {
@@ -40,8 +41,7 @@
 
 .logo {
     float: right;
-    padding: 7px;
-    margin: 5px;
+    margin: 12px;   /* top right bottom left */
 }
 
 .img {
