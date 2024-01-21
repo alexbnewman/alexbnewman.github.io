@@ -18,5 +18,5 @@ dist/
 build/
 
 # Package files
-package-lock.json
+#package-lock.json
 
