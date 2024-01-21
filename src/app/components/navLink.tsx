@@ -12,7 +12,7 @@ export default function NavLink({ href, text }: NavLinkProps) {
     <li>
       <Link className={styles.card} href={href}>
         <Image
-          src="/cloud.png"
+          src="./cloud.png"
           className={styles.cloud}
           width={325}
           height={325}
