@@ -1,20 +1,44 @@
+"use client"
+
 import styles from "./page.module.css";
 import Image from "next/image";
 import Nav from "../components/nav";
 
 export default function About() {
+  const handleButtonClick = () => {
+    const infoElement = document.getElementById("info");
+    if (infoElement) {
+      const offsetVh = 15; // Adjust as needed
+      const targetPosition =
+        infoElement.offsetTop - window.innerHeight * (offsetVh / 100);
+
+      window.scroll({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <>
       <Nav />
       <main className={styles.main}>
         <div className={styles.firstRow}>
-          <div>
+          <div className={styles.leftCol}>
             <h1>About</h1>
             <h2>Hi, I'm Alex.</h2>
             <h2>
               I'm studying computer science and sociology at the University of
               Michigan.
             </h2>
+            <button onClick={handleButtonClick}>
+              <Image
+                src="/down_arrow.png"
+                className={styles.downArrow}
+                width={80}
+                height={80}
+                alt="Scroll down for more."
+              />
+            </button>
           </div>
           <Image
             src="/Alex_Newman_cropped.jpg"
@@ -24,7 +48,7 @@ export default function About() {
             alt="Portrait of Alex."
           />
         </div>
-        <div className={styles.container}>
+        <div id="info" className={styles.container}>
           <Image
             src="/um_logo.png"
             className={styles.img}

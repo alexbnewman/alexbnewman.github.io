@@ -9,7 +9,7 @@
 
 .firstRow {
     display: grid;
-    padding: 4rem 4rem 0 4rem;
+    padding: 5vh 4rem 0 4rem;
     grid-template-columns: repeat(2, minmax(50%, auto));
     max-width: 100%;
     width: var(--max-width);
@@ -26,6 +26,26 @@
     padding-right: 2vh;
 }
 
+.firstRow button {
+    background: none;
+    border: none;
+}
+
+.downArrow {
+    margin-top: 10vh;
+    animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .9;
+    }
+}
+
 .profPic {
     border-radius: 9px;
     align-items: center;
@@ -38,13 +58,12 @@
     /* Center items vertically */
     width: 67%;
     margin-top: 17vh;
-    height: 49vh;
     background-color: rgb(255, 255, 255);
 }
 
 .container p {
-    font-size: 1.75rem;
-    padding: 15px;
+    font-size: 1.75vw;
+    padding: .25vw;
     margin: 40px;
 }
 
@@ -55,4 +74,5 @@
 
 .img {
     margin: 0px;
+    padding: 0px;
 }

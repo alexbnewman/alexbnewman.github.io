@@ -17,10 +17,6 @@
   margin-top: 5rem;
   padding-bottom: 4rem;
   animation: fadeIn 3s;
-  -webkit-animation: fadeIn 3s;
-  -moz-animation: fadeIn 3s;
-  -o-animation: fadeIn 3s;
-  -ms-animation: fadeIn 3s;
 }
 
 @keyframes fadeIn {
