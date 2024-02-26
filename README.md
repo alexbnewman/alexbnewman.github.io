@@ -1,2 +1,2 @@
-# alexnewman.github.io
+# alexbnewman.github.io
 Personal website of Alex Newman.
