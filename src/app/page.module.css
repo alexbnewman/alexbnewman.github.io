@@ -10,6 +10,7 @@
 
 .main h1 {
   font-size: 2.25rem;
+  text-align: center;
 }
 
 .main p {
@@ -17,6 +18,17 @@
   margin-top: 5rem;
   padding-bottom: 4rem;
   animation: fadeIn 3s;
+}
+
+/* When the screen is narrow, shrink gaps */
+@media (max-width: 768px) {
+  .main {
+    padding: 3rem 3.5rem 2rem 3.5rem;
+  }
+  .main p {
+    padding-bottom: .5rem;
+    margin-top: 2.5rem;
+  }
 }
 
 @keyframes fadeIn {
@@ -39,7 +51,7 @@
 /* Mobile */
 @media (max-width: 700px) {
   .center {
-    padding: 8rem 0 6rem;
+    padding: 2rem 0 2rem;
   }
 
   .center::before {
