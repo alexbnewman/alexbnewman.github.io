@@ -12,9 +12,8 @@
 }
 
 .scrolled {
-    background-color: rgb(255,
-        255,
-        255);
+    background-color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, white, rgb(178, 207, 253), white);
     border-bottom: solid 2px rgb(140, 180, 246);
 }
 

@@ -3,20 +3,19 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem 6rem 3rem 6rem;
+  padding: 6rem 6rem 6rem 6rem;
   min-height: 100vh;
   overflow: hidden;
 }
 
 .main h1 {
-  font-size: 2.25rem;
+  font-size: 4vw;
   text-align: center;
 }
 
 .main p {
-  font-size: 1.15rem;
-  margin-top: 5rem;
-  padding-bottom: 4rem;
+  font-size: 3vh;
+  margin: 3rem 10rem;
   animation: fadeIn 3s;
 }
 

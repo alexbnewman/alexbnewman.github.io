@@ -1,12 +1,9 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import Nav from "../components/nav";
-
 export default function Contact() {
   return (
     <>
-      <Nav />
       <main className={styles.main}>
         <div className={styles.text}>
           <h1 className={styles.pageTitle}>Contact Information</h1>

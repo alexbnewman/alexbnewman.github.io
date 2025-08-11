@@ -1,11 +1,10 @@
-import Nav from "../components/nav";
+import Nav from "../../components/nav";
 import styles from "./page.module.css";
 import Image from "next/image";
 
 export default function Projects() {
   return (
     <>
-      <Nav />
       <main className={styles.main}>
         <h1>Projects</h1>
         <Image

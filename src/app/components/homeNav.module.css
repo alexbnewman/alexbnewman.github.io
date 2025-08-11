@@ -9,7 +9,7 @@
 .navbar {
     display: flex;
     justify-content: center;
-    gap: 7.75rem;
+    gap: 2rem;
     flex-wrap: wrap; /* allow wrapping */
     /* Get rid of automatic list bullet points. */
     list-style: none;
@@ -34,6 +34,7 @@
     transition: background 200ms, border 200ms;
     position: relative;
     height: 275px;
+    width: 275px;
     /* overflow: hidden; */
     margin: 15px;
 }

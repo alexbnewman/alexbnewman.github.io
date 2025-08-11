@@ -9,7 +9,11 @@ import React, { useState, useEffect } from "react";
 export default function Nav() {
   const pathname = usePathname();
   const [colorChange, setColorchange] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
+    // This ensures we're on the client
+    setIsClient(true);
     const changeNavbarColor = () => {
       if (window.scrollY >= 30) {
         setColorchange(true);
@@ -17,8 +21,21 @@ export default function Nav() {
         setColorchange(false);
       }
     };
+
+    // Add scroll listener
     window.addEventListener("scroll", changeNavbarColor);
+    
+    // Cleanup function to remove listener
+    return () => {
+      window.removeEventListener("scroll", changeNavbarColor);
+    };
   }, []);
+
+  // Don't render anything until we're on the client
+  if (!isClient) {
+    return <div style={{ height: '60px' }}></div>; // placeholder to prevent layout shift
+  }
+
   return (
     <ul className={`${styles.navbar} ${colorChange ? styles.scrolled : ""}`}>
       <li className={styles.linkContainer}>

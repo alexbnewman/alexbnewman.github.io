@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import HomeNav from "./components/homeNav";
+import HomeNav from "../components/homeNav";
 
 export default function Home() {
   return (

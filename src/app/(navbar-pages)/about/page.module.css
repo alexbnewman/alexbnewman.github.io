@@ -36,6 +36,10 @@
     animation: fadeIn 4s;
 }
 
+.downArrow:hover {
+    animation: bounce 0.5s;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -51,18 +55,42 @@
     align-items: center;
 }
 
+.infoCards {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    gap: 1rem;
+}
+
 .container {
     border: 2px solid #96c0e8f4;
+    border-radius: 25px;
     display: flex;
+    justify-content: center;
     align-items: center;
     /* Center items vertically */
     width: 67%;
     margin-top: 17vh;
-    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 8px rgba(54, 99, 172, 0.6);
+  transition: box-shadow 0.3s ease-in-out;
+    background: linear-gradient(45deg, white, rgb(190, 212, 248), white);
+}
+
+.container:hover {
+  animation: pulseGlow 1.5s infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(54, 99, 172, 0.6), 0 0 20px rgba(54, 99, 172, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(54, 99, 172, 1), 0 0 30px rgba(54, 99, 172, 0.8);
+  }
 }
 
 .container p {
-    font-size: 1.75vw;
+    /* font-size: 1.75vw; */
     padding: .25vw;
     margin: 40px;
 }
@@ -75,4 +103,5 @@
 .img {
     margin: 0px;
     padding: 0px;
+    border-radius: 20px;
 }
